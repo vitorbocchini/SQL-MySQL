@@ -4,14 +4,14 @@ USE sakila;
 SELECT * 
 FROM payment
 WHERE amount > (
-	SELECT AVG(amount)
+    SELECT AVG(amount)
     FROM payment);
     
 -- Seleciona todos registros da tabela payment onde valor seja igual a compra máxima do customer_id 1
 SELECT *
 FROM payment
 WHERE amount = (
-	SELECT MAX(amount)
+    SELECT MAX(amount)
     FROM payment
     WHERE customer_id = 1);
     
