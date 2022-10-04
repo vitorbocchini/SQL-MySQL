@@ -3,7 +3,7 @@ USE sakila
 -- Seleciona os clientes que gastam mais que 10.99 e mostre-os como 'vip'
 -- UNION
 SELECT 
-	cus.customer_id,
+    cus.customer_id,
     cus.first_name,
     cus.last_name,
     pay.rental_id,
@@ -17,7 +17,7 @@ JOIN payment pay
 UNION
   
 SELECT 
-	cus.customer_id,
+    cus.customer_id,
     cus.first_name,
     cus.last_name,
     pay.rental_id,
